@@ -10,5 +10,8 @@ def chooseIm(num):
         flash.show()
     elif (num == 1):
         noFlash.show()
+    sleep(0.5)
+
+    
 
 chooseIm(1)
