@@ -1,4 +1,5 @@
 from PIL import Image
+from time import sleep
         
 flash = Image.open('flash.gif')
 noFlash = Image.open('noFlash.jpg')
