@@ -11,3 +11,4 @@ def chooseIm(num):
     elif (num == 1):
         noFlash.show()
 
+chooseIm(1)
