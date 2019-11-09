@@ -1,7 +1,7 @@
 from time import sleep
 from picamera import PiCamera
 
-camear = PiCamear()
+camera = PiCamear()
 camera.resolution = (224, 224)
 camera.start_preview()
 
