@@ -1,5 +1,6 @@
 from time import sleep
 from picamera import PiCamera
+import subprocess
 
 #for naming the photos
 picounter = 0
@@ -27,5 +28,5 @@ camera = PiCamera()
 startup()
 main(10)
 camera.stop_preview()
-
+subprocess.call(['transferfilestopi.sh'])
 
