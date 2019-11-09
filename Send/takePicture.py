@@ -10,15 +10,15 @@ def startup():
     camera.start_preview()
     
 #takes a photo and saves it as picounter
-def capture():
-    camera.capture("%d" % picounter)
-    piccounter++
+def capture1():
+    global picounter
+    camera.capture("picture" + str(picounter)+".jpg")
+    picounter = picounter + 1
 
-    
-#main loop
+    #main loop
 def main(numpics):
     for x in range(numpics):
-        capture()
+        capture1()
         sleep(0.5)
 
 
