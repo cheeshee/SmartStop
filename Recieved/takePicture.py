@@ -1,6 +1,6 @@
 from time import sleep
 from picamera import PiCamera
-import subprocess
+
 
 #for naming the photos
 picounter = 0
@@ -13,7 +13,7 @@ def startup():
 #takes a photo and saves it as picounter
 def capture1():
     global picounter
-    camera.capture("picture" + str(picounter)+".jpg")
+    camera.capture("picture" + str(picounter)+".png")
     picounter = picounter + 1
 
     #main loop
@@ -28,5 +28,3 @@ camera = PiCamera()
 startup()
 main(10)
 camera.stop_preview()
-subprocess.call(['transferfilestopi.sh'])
-
