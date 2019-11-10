@@ -24,12 +24,14 @@ def chooseIm(num):
     elif (num == 1):
         windowSurface.fill(noFlash)
         flashing = 0
+        
     sleep(0.5)
+    pygame.display.update()
 
 
 
 test = [0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0]
-for x in test
+for x in test:
     chooseIm(x)
 
 myfile = open("sign.txt", "rt")

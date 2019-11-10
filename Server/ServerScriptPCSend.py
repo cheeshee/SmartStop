@@ -3,7 +3,7 @@ import socket                   # Import socket module
 port = 60000                    # Reserve a port for your service.
 s = socket.socket()             # Create a socket object
 host = socket.gethostname()     # Get local machine name
-s.bind(('0.0.0.0', port))            # Bind to the port
+s.bind((host, port))            # Bind to the port
 s.listen(5)                     # Now wait for client connection.
 
 print ('Server listening....')
