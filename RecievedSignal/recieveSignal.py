@@ -25,16 +25,17 @@ def chooseIm(num):
         windowSurface.fill(noFlash)
         flashing = 0
         
-    sleep(0.5)
     pygame.display.update()
 
 
-
-test = [0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0]
-for x in test:
-    chooseIm(x)
+##
+##test = [0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0]
+##for x in test:
+##    chooseIm(x)
 
 myfile = open("sign.txt", "rt")
-signal = myfile.read()
-myfile.close()
-chooseIm(signal)
+while True:
+    signal = myfile.read()
+##    myfile.close()
+    chooseIm(signal)
+    sleep(0.5)
