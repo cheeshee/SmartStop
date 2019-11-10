@@ -18,14 +18,14 @@ def chooseIm(num):
     if (num == 0 and flashing == 0):
         windowSurface.blit(flash0, (0,0))
         flashing = 1
-    if (num == 0 and flashing == 1):
+    elif (num == 0 and flashing == 1):
         windowSurface.blit(flash1, (0,0))
         flashing = 0
     elif (num == 1):
         windowSurface.blit(noFlash, (0,0))
         flashing = 0
-    pygame.display.update()
     sleep(0.5)
+    pygame.display.update()
 
     
 
