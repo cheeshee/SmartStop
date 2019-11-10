@@ -24,7 +24,7 @@ def chooseIm(num):
 ##    pygame.draw.rect(windowSurface, flash, rect)
     if (num == 0 and flashing == 0):
         #windowSurface.blit(flash0, (0,0))
-        pygame.Surface.fill(flash)
+        windowSurface.fill(flash)
         flashing = 1
     elif (num == 0 and flashing == 1):
         windowSurface.blit(flash1, (0,0))    
