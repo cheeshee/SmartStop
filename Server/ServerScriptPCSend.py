@@ -11,10 +11,11 @@ print ('Server listening....')
 while True:
     conn, addr = s.accept()     # Establish connection with client.
     print ('Got connection from', addr)
-    data = conn.recv(1024)
-    print('Server received', repr(data))
+    #data = conn.recv(1024)
+    #print('Server received', repr(data))
+    print('recieved')
 
-    filename='hiamy.txt'
+    filename='sign.txt'
     f = open(filename,'rb')
     l = f.read()
     while (l):
