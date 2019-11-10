@@ -24,19 +24,19 @@ def chooseIm(num):
 ##    pygame.draw.rect(windowSurface, flash, rect)
     if (num == 0 and flashing == 0):
         #windowSurface.blit(flash0, (0,0))
-        pygame.Surface.fill(flash)
+        windowSurface.fill(flash)
         flashing = 1
     if (num == 0 and flashing == 1):
 ##        windowSurface.blit(flash1, (0,0))
-        pygame.Surface.fill(noFlash)
+        windowSurface.fill(noFlash)
         flashing = 0
     elif (num == 1):
 ##        windowSurface.blit(noFlash, (0,0))
-        pygame.Surface.fill(noFlash)
+        windowSurface.fill(noFlash)
         flashing = 0
 ##    pygame.display.update()
     sleep(0.5)
 
-    
-
-chooseIm(0)
+test = [0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0]
+for x in test
+    chooseIm(x)
