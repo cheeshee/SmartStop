@@ -17,6 +17,7 @@ while True:
 
     filename='sign.txt'
     f = open(filename,'rb')
+    f.write('1')
     l = f.read()
     while (l):
        conn.send(l)
