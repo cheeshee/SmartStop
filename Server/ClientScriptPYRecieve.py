@@ -4,7 +4,7 @@ s = socket.socket()             # Create a socket object
 host = socket.gethostname()     # Get local machine name
 port = 60000                    # Reserve a port for your service.
 
-s.connect((host, port))
+s.connect(('LAPTOP-B6CAK6KD', port))
 s.send("Hello server!")
 
 with open('received_file', 'wb') as f:
