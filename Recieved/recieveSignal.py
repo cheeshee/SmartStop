@@ -3,8 +3,8 @@ from time import sleep
 from pygame.locals import*
 
 pygame.init()        
-flash = pygame.image.load('/home/pi/Congested/SmartStop/Recieved/flash.jpg')
-noFlash = pygame.image.load('/home/pi/Congested/SmartStop/Recieved/noFlash.jpg')
+flash = pygame.image.load('/home/pi/Congested/SmartStop/Recieved/flash.png')
+noFlash = pygame.image.load('/home/pi/Congested/SmartStop/Recieved/noFlash.png')
 WIDTH = 800
 HEIGHT = 480
 windowSurface = pygame.display.set_mode((WIDTH, HEIGHT), 0, 0)
@@ -18,6 +18,7 @@ def chooseIm(num):
     elif (num == 1):
         windowSurface.blit(noFlash, (0,0))
     sleep(0.5)
+    pygame.display.update()
 
     
 
