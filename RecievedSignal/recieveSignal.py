@@ -7,7 +7,7 @@ HEIGHT = 480
 pygame.init()
 windowSurface = pygame.display.set_mode((WIDTH, HEIGHT), 0, 0)
 ##rect = pygame.Rect(0,0, WIDTH, HEIGHT)
-flash = pygame.Color.r
+flash = pygame.Color(255,0,0)
 noFlash = pygame.Color(0,0,0)
 
 ##flash0 = pygame.image.load('/home/pi/Congested/SmartStop/Recieved/flash0.png')
